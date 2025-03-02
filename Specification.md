@@ -30,3 +30,6 @@ This project aims to build a **minimum viable product (MVP)** with key features 
 - **Backend**: Node.js (Express.js)
 - **Database**: MongoDB
 - **AI Model**: Python (for scheduling optimization)
+
+- ![Uploading ERDiagram_AI Medical System.png…]()
+
