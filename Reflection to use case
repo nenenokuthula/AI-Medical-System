@@ -1,0 +1,25 @@
+
+1. Understanding Stakeholder Needs
+One of the biggest challenges was ensuring that the use cases align with stakeholder expectations. Patients, doctors, and hospital administrators have different priorities. Patients want an easy booking experience, doctors need a well-managed schedule, and administrators require efficiency. Ensuring these needs were accurately translated into use cases required careful review of functional requirements.
+
+Solution: Regularly revisiting system requirements and validating them against real-world scenarios helped refine use cases to cover diverse user needs.
+
+2. Balancing System Complexity vs. Simplicity
+While designing the use case diagram, ensuring it wasn’t overly complex yet still detailed enough to cover key functionalities was a challenge. Initially, too many use cases were identified, making it hard to maintain clarity.
+
+Solution: Grouping similar processes (e.g., appointment booking and AI rescheduling) under high-level use cases helped reduce complexity while maintaining completeness.
+
+3. Defining Alternative Flows & Exceptions
+Creating alternative flows for cases like doctor unavailability, missed appointments, or exceeded cancellation deadlines was tricky. It required anticipating real-world user behaviors and system errors.
+
+Solution: Conducting error analysis for each use case helped uncover edge cases. Discussions with potential users and studying existing healthcare scheduling platforms provided insights into practical scenarios.
+
+4. Writing Test Cases with Measurable Outcomes
+Translating use cases into test cases required defining clear, measurable expected results. For example, defining a “successful appointment booking” needed precise criteria, such as confirmation messages, database updates, and doctor notifications.
+
+Solution: Each test case was tied to specific functional or non-functional requirements to ensure full coverage. A mix of manual and automated testing approaches was also considered.
+
+5. Ensuring Non-Functional Requirements Are Testable
+Testing for performance (1,000+ concurrent users), security (data encryption), and usability posed a challenge. Unlike functional tests, non-functional requirements often require specialized testing tools.
+
+Solution: The test cases included simulation-based performance tests and security validation steps (e.g., encryption verification, penetration testing). Setting clear success criteria, such as response time ≤ 2 seconds, helped create structured test cases.
