@@ -1,5 +1,3 @@
-# GitHub Project Template Analysis  
-
 ## Comparison Table  
 
 | Template            | Columns & Workflow                         | Automation Features                     | Suitability for Agile Development |
