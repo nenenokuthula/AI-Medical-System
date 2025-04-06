@@ -30,18 +30,3 @@ Mapping to User Stories: Each workflow and state transition must be linked to sp
 
 Sprint Task Mapping: Each diagram must also tie to a specific sprint task. For example, the "Cancel Appointment" workflow might have been planned as a sprint task, aligning with the sprint planning process.
 [Click here to view the Appointment Diagram](https://github.com/nenenokuthula/AI-Medical-System/blob/main/Appointment%20Diagram.png)
-[Click here to view the Doctor Diagram](https://github.com/nenenokuthula/AI-Medical-System/blob/main/Doctor%20Diagram.png)
-[Click here to view the Medical Record Diagram](https://github.com/nenenokuthula/AI-Medical-System/blob/main/Medical%20Record%20Diagram.png)
-[Click here to view the Notification Diagram](https://github.com/nenenokuthula/AI-Medical-System/blob/main/Notification%20Diagram.png)
-[Click here to view the Patient Diagram](https://github.com/nenenokuthula/AI-Medical-System/blob/main/Patient%20Diagram.png)
-[Click here to view the Payment Diagram](https://github.com/nenenokuthula/AI-Medical-System/blob/main/Payment%20Diagram.png)
-[Click here to view the Prescription Diagram](https://github.com/nenenokuthula/AI-Medical-System/blob/main/Pescription%20Diagram.png)
-[Click here to view the User Account Diagram](https://github.com/nenenokuthula/AI-Medical-System/blob/main/User%20Account%20Diagram.png)
-[Click here to view the Appointment Cancellation Diagram](https://github.com/nenenokuthula/AI-Medical-System/blob/main/Appiontment%20Cancellation%20Diagram.png)
-[Click here to view the Appointment Booking Diagram](https://github.com/nenenokuthula/AI-Medical-System/blob/main/Appointment%20Booking%20Diagram.png)
-[Click here to view the Doctor Availability Update Diagram](https://github.com/nenenokuthula/AI-Medical-System/blob/main/Doctor%20Availability%20Update%20Diagram.png)
-[Click here to view the EHR Update Diagram](https://github.com/nenenokuthula/AI-Medical-System/blob/main/EHR%20Update.png)
-[Click here to view the Notification Handling Diagram](https://github.com/nenenokuthula/AI-Medical-System/blob/main/Notification%20Handling%20Diagram.png)
-[Click here to view the Patient Registration Diagram](https://github.com/nenenokuthula/AI-Medical-System/blob/main/Patient%20Registration%20Diagram.png)
-[Click here to view the Payment Processing Diagram](https://github.com/nenenokuthula/AI-Medical-System/blob/main/Payment%20Processing%20Diagram.png)
-[Click here to view the Prescription Generation Diagram](https://github.com/nenenokuthula/AI-Medical-System/blob/main/Prescription%20Generation%20Diagram.png)
