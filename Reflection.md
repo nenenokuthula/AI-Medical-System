@@ -71,7 +71,27 @@ Balancing these perspectives required careful backlog management. The MVP sprint
 
 This Agile sprint planning exercise revealed the complexities of balancing usability, security and technical feasibility. Breaking down work into user stories helped clarify priorities but estimating effort remains a challenge. Future sprints will refine the backlog based on real user feedback reinforcing Agile’s iterative nature. By maintaining flexibility and continuous improvement SmartMed can evolve to meet stakeholder expectations effectively. 
 
- 
+
+ ## **Challenges in Selecting and Customizing the Template**  
+- **Choosing the right template** → *Automated Kanban* was the best fit, but additional columns like *Testing* and *Blocked* were needed.  
+- **Managing dependencies** → Some tasks (e.g., AI scheduling) depend on others, requiring a *Blocked* column.  
+
+## **Comparison: GitHub Projects vs. Trello vs. Jira**  
+
+| Tool              | Strengths | Weaknesses |
+|------------------|--------------------------------|--------------------------------|
+| **GitHub Projects** | Integrated with codebase, supports automation | Less flexible than Jira for advanced workflows |
+| **Trello** | Simple, intuitive UI, drag-and-drop | Lacks built-in automation and GitHub integration |
+| **Jira** | Powerful for Agile planning, supports backlog grooming | Can be complex for smaller teams |
+
+## **Lessons Learned**  
+- **Automation saves time** when managing medical appointment features.  
+- **GitHub Projects is effective for Agile teams** when integrated with Issues.  
+- **Kanban helps visualize bottlenecks**, especially in AI scheduling tasks.  
+
+
+
+
 Reflection on assignment 8
 Challenges Faced:
 Granularity of States & Actions:
