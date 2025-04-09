@@ -90,3 +90,31 @@ Comparison of State vs. Activity Diagrams:
 State Transition Diagrams focus on object lifecycle changes. Example: Appointment moving from Requested to Scheduled.
 
 Activity Diagrams model step-by-step processes. Example: How an appointment is booked, including decisions and parallel tasks.
+
+
+Reflection – SmartMed Domain Modeling & Class Diagram
+Creating the domain model and class diagram for the SmartMed system was an important step in turning our earlier ideas and requirements into a real software design. This process came with challenges, required decisions based on previous work, and taught me valuable lessons about object-oriented design.
+
+1. Challenges Faced
+One of the main challenges was figuring out the right level of detail for each class. At first, I added too many methods and attributes, which made the diagram too complex. After reviewing our earlier use cases and workflows, I simplified each class to include only what was essential.
+
+Another challenge was dealing with relationships between entities. For example, one doctor can have many appointments, and each appointment must be linked to both a doctor and a patient. Getting the multiplicity right (like 1..* or 0..1) took some time. I also had to make sure that I didn’t create unnecessary or confusing connections between classes.
+
+Defining methods for each class was also tricky. I had to balance between making the class useful and keeping it simple. For instance, Appointment needed just a few methods like cancel() and reschedule(), but they had to match the logic we described in earlier assignments.
+
+2. Alignment with Previous Assignments
+The class diagram lines up well with our earlier work. The Patient and Doctor classes match the actors we defined in our use case diagrams (Assignment 5). The actions they perform, like booking or managing appointments, are also represented in their methods.
+
+Our state diagrams and activity workflows from Assignment 8 helped shape the behavior of classes like Appointment and Notification. The Scheduler class, which uses AI to suggest the best times, came from earlier discussions in our requirements document.
+
+Overall, the class diagram fits nicely with the bigger picture of the SmartMed system and supports the features we planned.
+
+3. Trade-offs Made
+One key decision was choosing composition over inheritance. I originally thought about having a base User class with Patient and Doctor as subclasses. But this made things more complicated, especially with how both need access to a shared UserAccount. Instead, I kept Patient and Doctor separate and linked both to UserAccount, which made the model easier to understand and implement.
+
+Another trade-off was keeping the Scheduler as a stateless class. I could have designed it with stored data or results, but keeping it simple as a logic-only service made the diagram clearer and more focused on core functionality.
+
+4. Lessons Learned
+This assignment taught me that a good domain model is not just a list of classes—it’s a way to visualize how the system works. I learned how important it is to think about responsibilities, not just data. It also helped me better understand how objects relate to each other and why clean design matters.
+
+I also learned the value of iteration. My first version of the diagram had too many connections and was hard to read. After reviewing it and comparing it with earlier assignments, I was able to simplify it while keeping all important features.
