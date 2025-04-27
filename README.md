@@ -61,3 +61,69 @@ Sprint Task Mapping: Each diagram must also tie to a specific sprint task. For e
 
 [Click here to view the Prescription Generation Diagram](https://github.com/nenenokuthula/AI-Medical-System/blob/main/Prescription%20Generation%20Diagram.png)
 
+
+Assignment 11
+1. Repository Interface Design 
+Generic Repository Interface (Repository<T, ID>)
+Defines standard CRUD operations (save, findById, findAll, delete) in a reusable, type-safe manner.
+
+Entity-Specific Interfaces
+Example: BookRepository extends Repository<Book, String>.
+
+Justification:
+
+"Used generics to avoid duplication across entity repositories, promoting type safety and reusability."
+
+2. In-Memory Implementation 
+InMemoryBookRepository:
+Implements BookRepository using a simple in-memory HashMap for object storage.
+
+CRUD Operations:
+
+save stores or updates objects.
+
+findById retrieves objects.
+
+findAll returns all stored objects.
+
+delete removes objects.
+
+Unit Tests:
+Comprehensive JUnit tests under /tests/ validate all CRUD operations.
+
+3. Storage Abstraction Mechanism 
+Factory Pattern:
+Implemented via RepositoryFactory to decouple services from storage backends.
+
+Advantages:
+
+Easily swap between InMemoryBookRepository, DatabaseBookRepository, or future repositories.
+
+Centralizes repository creation logic.
+
+Justification:
+
+"Factory Pattern was chosen for its simplicity, flexibility, and ability to dynamically select repository implementations without tightly coupling services to specific storage types."
+
+4. Future-Proofing 
+Stub Implementation:
+DatabaseBookRepository is prepared for future database integration.
+
+Design Considerations:
+
+Clear separation of repository interfaces and implementations.
+
+Adding new backends (e.g., FileSystemRepository, APIRepository) will not affect existing service code.
+
+Updated Class Diagram:
+A Mermaid.js diagram visualizes the relationships between interfaces and implementations.
+
+Why This Design Matters
+Separation of Concerns:
+Business logic remains clean, independent of how and where data is stored.
+
+Scalability:
+Easy to migrate from simple in-memory storage to databases like MySQL, MongoDB, or even remote APIs.
+
+Testability:
+In-memory repositories enable fast, lightweight unit testing without external dependencies.
