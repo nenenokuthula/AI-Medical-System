@@ -127,3 +127,18 @@ Easy to migrate from simple in-memory storage to databases like MySQL, MongoDB, 
 
 Testability:
 In-memory repositories enable fast, lightweight unit testing without external dependencies.
+
+
+Library API – Assignment 12
+This project is part of Assignment 12 for the Advanced Diploma in ICT – Application Development program. It demonstrates the implementation of a service layer and RESTful API using Java and Spring Boot. The system simulates a simple library management API where users can perform core operations such as adding books, updating book information, and checking out books. The business logic is encapsulated in a dedicated service layer, ensuring clear separation of concerns between data access (repository), business rules (service), and user interaction (REST API).
+
+The application follows a layered architecture with a domain model (Book), a repository interface for data access, a service class implementing business rules such as checking out a book (ensuring it isn’t already checked out), and a controller exposing RESTful endpoints. The API provides endpoints for retrieving all books (GET /api/books), adding a new book (POST /api/books), updating book details (PUT /api/books/{id}), and checking out a book (POST /api/books/{id}/checkout). Each endpoint returns structured JSON responses, including success messages and book data.
+
+Swagger documentation is integrated using Springdoc OpenAPI, which automatically generates an interactive API interface accessible at http://localhost:8080/swagger-ui.html. This makes it easier for developers and users to explore and test API endpoints. A screenshot of the Swagger UI is included in the /docs folder for submission.
+
+The project is organized into clear directories: /domain for models, /repository for data access interfaces, /services for business logic, and /api for controllers. Unit and integration tests are included under /test, ensuring key functions such as checkoutBook() work as intended. The project uses Maven for dependency management and build automation.
+
+GitHub activity is documented via a project board, with issues created and tracked for each development task (e.g., implementing the BookService, setting up controllers, and enabling Swagger documentation). Commits are linked to issues using proper commit messages (e.g., git commit -m "Close #12: Implement checkout endpoint"), and a CHANGELOG.md file summarizes project milestones, features, and bug fixes.
+
+Overall, this assignment reinforces best practices in building scalable, testable, and well-documented APIs by using a clear service-oriented architecture, meaningful HTTP conventions, and modern documentation standards.
+
